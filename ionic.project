@@ -1,6 +1,6 @@
 {
   "name": "GDGCine",
-  "app_id": "",
+  "app_id": "51c92385",
   "gulpStartupTasks": [
     "sass",
     "watch"
