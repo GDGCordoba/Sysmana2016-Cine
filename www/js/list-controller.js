@@ -5,7 +5,7 @@ GDGCine.controller('ListCtrl', function($scope, $http, Movies, $ionicListDelegat
   };
  
   $scope.movie = {
-    name: 'Batman'
+    name: 'Star Wars'
   }
   
   $scope.onItemDelete = function(index) {
