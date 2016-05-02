@@ -4,15 +4,13 @@
       <i class="icon ion-search placeholder-icon"></i>
       <input type="search" placeholder="Search" ng-model="movie.name" ng-change="searchMovieDB()">
     </label>
-    <ion-list delegate-handle="movies-list">
-      <ion-list can-swipe="true">
+    <ion-list delegate-handle="movies-list" can-swipe="true">
       	<ion-item collection-repeat="movie in movies" collection-item-width="'100%'" collection-item-height="100" href="#/movie/{{movie.id}}" class="item-thumbnail-left">
       		<img ng-src="https://image.tmdb.org/t/p/w92{{movie.poster_path}}" onerror="this.src = 'https://www.ginesisnatural.com/images/no_image.jpg';">
       		<h2>{{movie.original_title}}</h2>
       		<h4>{{movie.release_date}}</h4>
       		<ion-option-button ng-click="onItemDelete($index)" class="button-assertive">Delete</ion-option-button>
       	</ion-item>
-      </ion-list>
     </ion-list>
   </ion-content>
 </ion-view>
